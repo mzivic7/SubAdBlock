@@ -6,7 +6,7 @@ try:
     with open("config.conf") as file:   # open settings file
         conf = file.readlines()   # read settings
         txt_encoding = conf[0].replace("\n", "")   # read first line and remove newline
-        bellow = eval(conf[0].replace("\n", ""))   # read second line and remove newline
+        bellow = eval(conf[1].replace("\n", ""))   # read second line and remove newline
         filetypes = conf[2].replace("\n", "")   # read third line and remove newline
         filetypes = filetypes.split(", ")   # convert string to list
         keywords = conf[3].replace("\n", "")   # read fourth line and remove newline
